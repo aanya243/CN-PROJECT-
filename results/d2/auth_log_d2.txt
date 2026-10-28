@@ -1,0 +1,18 @@
+2026-10-26 13:49:05 auth server listening on 0.0.0.0:5000
+2026-10-26 13:50:17 LOGIN_OK user=alice role=user ip=10.0.0.1 ports=[8081, 8080] ttl=60
+2026-10-26 13:51:18 SESSION_EXPIRED user=alice ip=10.0.0.1 revoke=OK
+2026-10-26 13:58:38 LOGIN_OK user=admin role=admin ip=10.0.0.2 ports=[8081, 8080, 9090] ttl=120
+2026-10-26 13:59:25 LOGIN_OK user=carol role=guest ip=10.0.0.3 ports=[8081] ttl=30
+2026-10-26 13:59:55 SESSION_EXPIRED user=carol ip=10.0.0.3 revoke=OK
+2026-10-26 14:00:38 SESSION_EXPIRED user=admin ip=10.0.0.2 revoke=OK
+2026-10-26 14:02:24 LOGIN_OK user=alice role=user ip=10.0.0.1 ports=[8081, 8080] ttl=60
+2026-10-26 14:02:28 LOGOUT user=alice ip=10.0.0.1 revoke=OK
+2026-10-26 14:03:11 LOGIN_OK user=alice role=user ip=10.0.0.1 ports=[8081, 8080] ttl=60
+2026-10-26 14:03:14 LOGOUT user=alice ip=10.0.0.1 revoke=OK
+2026-10-26 14:04:09 LOGIN_FAIL user=alice ip=10.0.0.66
+2026-10-26 14:04:13 LOGIN_FAIL user=alice ip=10.0.0.66
+2026-10-26 14:04:18 LOGIN_FAIL user=alice ip=10.0.0.66
+2026-10-26 14:04:18 BRUTEFORCE_BLOCK ip=10.0.0.66 for 30s
+2026-10-26 14:04:51 LOGIN_OK user=alice role=user ip=10.0.0.66 ports=[8081, 8080] ttl=60
+2026-10-26 14:05:51 SESSION_EXPIRED user=alice ip=10.0.0.66 revoke=OK
+2026-10-26 14:06:10 LOGIN_FAIL user=alice ip=10.0.0.66

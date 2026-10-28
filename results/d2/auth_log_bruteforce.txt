@@ -1,0 +1,8 @@
+2026-10-28 11:33:26 auth server listening on 0.0.0.0:5000
+2026-10-28 11:34:10 LOGIN_FAIL user=alice ip=10.0.0.66
+2026-10-28 11:34:13 LOGIN_FAIL user=alice ip=10.0.0.66
+2026-10-28 11:34:16 LOGIN_FAIL user=alice ip=10.0.0.66
+2026-10-28 11:34:16 BRUTEFORCE_BLOCK ip=10.0.0.66 for 30s
+2026-10-28 11:35:07 LOGIN_OK user=alice role=user ip=10.0.0.66 ports=[8081, 8080] ttl=60
+2026-10-28 11:35:13 LOGIN_FAIL user=alice ip=10.0.0.66
+2026-10-28 11:36:08 SESSION_EXPIRED user=alice ip=10.0.0.66 revoke=OK
