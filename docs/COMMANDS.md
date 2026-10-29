@@ -188,31 +188,5 @@ Output: `results/perf/fig1..fig4.png`, `summary.md`, and the CSVs.
 | Mininet left in a bad state | `exit`, then `sudo mn -c` |
 | A grant takes ~1 s once in a while | Known: first SYN lost, TCP retries after 1 s (documented in the report) |
 
----
 
-## 7. GitHub (submission)
 
-One-time setup:
-```
-sudo apt install -y git
-git config --global user.name "Your Name"
-git config --global user.email "you@example.com"
-```
-Create an empty repo on github.com first, then:
-```
-cd ~/Downloads/sdn-auth
-git init
-git add .
-git commit -m "D1 and D2: SDN authentication and access control"
-git branch -M main
-git remote add origin https://github.com/<username>/<repo>.git
-git push -u origin main
-```
-GitHub asks for a personal access token instead of a password (Settings -> Developer settings -> Personal access tokens).
-
-Later updates:
-```
-git add .
-git commit -m "describe the change"
-git push
-```
